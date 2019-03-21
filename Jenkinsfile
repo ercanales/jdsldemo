@@ -7,5 +7,5 @@ jobDsl scriptText: """
     }
 """
 
-    jobDsl additionalClasspath: ['jobs/**/*.groovy'].join('\n')
+    jobDsl additionalClasspath: ['jobs', 'jobs/**/*.groovy'].join('\n')
 }
