@@ -1,5 +1,11 @@
 node {
-    jobDsl scriptText: 'job("example-2")'
+jobDsl scriptText: """
+    job('DSL-Pipe-1-Test') {
+        scm {
+            git('git@github.com:ercanales/jdsldemo.git')
+        }
+    }
+"""
 
     jobDsl additionalClasspath: ['jobs', 'jobs/**/*.groovy'].join('\n')
 }
