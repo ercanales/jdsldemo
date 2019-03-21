@@ -7,4 +7,6 @@ jobDsl scriptText: """
     }
 """
 
+jobDsl additionalClasspath: 'jobs'
+
 }
