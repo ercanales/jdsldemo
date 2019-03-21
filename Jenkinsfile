@@ -7,6 +7,6 @@ jobDsl scriptText: """
     }
 """
 
-jobDsl additionalClasspath: 'jobs'
+jobDsl additionalClasspath: 'jobs/**/*.groovy'
 
 }
